@@ -1,0 +1,22 @@
+= Rhotoalbum
+
+version 0.9
+
+January 17, 2011
+
+Ondrej Jaura  mailto:ondrej@valibuk.net
+Viktor Zigo  mailto:viz@alephzarro.com (contributor)
+
+
+== I. Description
+
+Rhotoalbum is a photo album generator programmed in Ruby.
+
+It works with a directory structure, it produces static web content and it does not require any database.
+
+Rhotoalbum generates thumbnails and the index.html (rss.xml) file in each subdirectory. There is a possibility to add titles and descriptions of the images.
+
+== II. Web site
+
+Please see the Rhotoalbum web site http://rhotoalbum.rubyforge.org/ for futher information such as installation, configuration, best practices or F.A.Q.
+
