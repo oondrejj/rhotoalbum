@@ -33,10 +33,10 @@ require 'yaml'
 require 'fileutils'
 require 'uri'
 
-require 'optional_require'
+require './optional_require'
 optional_require 'rubygems' 
 EXIF_LIB = optional_require('exifr')
-require 'fx.rb'
+require './fx.rb'
 
 module RhotoAlbum
 
@@ -193,6 +193,7 @@ module RhotoAlbum
         out << "      viewer.disablePanning();\n" if not @opts[:panning]
         out << "      viewer.enableAutoPlay();\n" if false
         out << "      viewer.disableFading();\n" if not @opts[:fading]
+        out << "      viewer.setImageRoot(window.location.origin + '/images');\n"
     end
 
     def generate_end out
